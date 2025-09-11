@@ -1,0 +1,25 @@
+call	4.1200
+txt	3.9981
+free	3.4518
+to	3.3659
+text	3.1351
+reply	2.7077
+uk	2.6227
+mobile	2.5400
+www	2.5357
+your	2.5355
+claim	2.4666
+150p	2.4439
+stop	2.3712
+from	2.2523
+service	2.0283
+prize	2.0254
+win	1.9999
+you have	1.9908
+com	1.9786
+or	1.8884
+now	1.7954
+new	1.6980
+co	1.6937
+18	1.6722
+ur	1.6717
