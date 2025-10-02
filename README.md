@@ -1,4 +1,4 @@
-# SMS Spam Classifier 📱✉️ (NLP – Easy Project)
+# SMS Spam Classifier (NLP – Easy Project)
 
 A clean, reproducible **spam vs ham** SMS classifier that showcases end‑to‑end NLP skills recruiters care about: EDA, modeling, evaluation, interpretability, and reproducibility.
 
@@ -12,7 +12,7 @@ A clean, reproducible **spam vs ham** SMS classifier that showcases end‑to‑e
 <img alt="Confusion Matrix" src="reports/figures/confusion_matrix_test.png" width="43%">
 </p>
 
-## 🧰 Project Structure
+## Project Structure
 ```
 sms-spam-classifier/
 ├── data/
@@ -37,7 +37,7 @@ sms-spam-classifier/
 └── README.md
 ```
 
-## 🚀 Quickstart
+## Quickstart
 ```bash
 # 0) Create & activate isolated environment
 conda env create -f environment.yml
@@ -58,7 +58,7 @@ python src/infer.py --model_dir models/latest --text "Free entry to win £1000! 
 printf '%s\n%s\n' 'win cash now!!!' 'Hey, are we meeting at 5?' | python src/infer.py --model_dir models/latest
 ```
 
-## 📊 Results (reproducible baseline)
+## Results (reproducible baseline)
 On a held‑out split (15% val, 15% test, stratified; random_state=42):
 
 | Split | Accuracy | Spam Precision | Spam Recall | F1 (spam) | ROC‑AUC |
@@ -68,12 +68,18 @@ On a held‑out split (15% val, 15% test, stratified; random_state=42):
 
 **Interpretation:** The baseline is highly precise for spam (few false positives) but misses some spam (recall ~0.71). Use **threshold tuning** (Notebook `03_threshold_tuning.ipynb`) to trade precision for recall as needed.
 
-## 🧪 Plots & Analysis
+## Plots & Analysis
 - **ROC curve** and **Confusion matrix** → run `02_eval_plots.ipynb`.
 - **Threshold sweep (val)** → run `03_threshold_tuning.ipynb` for precision/recall/F1 curves and a suggested threshold.
 - **Top weighted n‑grams** → `python src/top_ngrams.py` (writes into `reports/`).
 
-## 🧠 Model Card (Short)
+## Interactive Notebooks (HTML Exports)
+
+- [01_eda.html](notebooks/exports/01_eda.html)
+- [02_eval_plots.html](notebooks/exports/02_eval_plots.html)
+- [03_threshold_tuning.html](notebooks/exports/03_threshold_tuning.html)
+
+## Model Card (Short)
 **Intended use.** Educational demo for SMS spam detection; not production‑hardened.  
 **Data.** SMS Spam Collection v1 (English; UK/Singapore origin). One message per line: `label \t text` (labels: `ham`, `spam`).  
 **Preprocessing.** Lowercasing, accent stripping; tokenization via `TfidfVectorizer` with `ngram_range=(1,2)`, `min_df=2`, `max_df=0.95`. No stemming/lemmatization.  
@@ -82,12 +88,12 @@ On a held‑out split (15% val, 15% test, stratified; random_state=42):
 **Limitations.** Domain/temporal bias in dataset; limited to English SMS; might miss obfuscated/modern spam patterns.  
 **Responsible use.** Calibrate threshold to your tolerance for false positives/negatives; monitor drift; consider human‑in‑the‑loop review in production.
 
-## 🔧 Reproducibility
+## Reproducibility
 - Deterministic split with `random_state=42`.  
 - Frozen environment via `environment.yml` / `requirements.txt`.  
 - All figures and artifacts saved in `reports/` and `models/`.
 
-## 🧭 Roadmap / Extensions
+## Roadmap / Extensions
 - DistilBERT baseline comparison (few‑epoch fine‑tune).  
 - Add **--threshold** flag to `infer.py`.  
 - Simple **FastAPI** endpoint for scoring.  
