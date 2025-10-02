@@ -2,7 +2,7 @@
 
 A clean, reproducible **spam vs ham** SMS classifier that showcases end‑to‑end NLP skills recruiters care about: EDA, modeling, evaluation, interpretability, and reproducibility.
 
-## 🔎 Overview
+## Overview
 **Task:** Binary text classification (spam vs ham) on the classic _SMS Spam Collection_ dataset (5,574 messages).  
 **Approach:** `TF‑IDF` features over unigrams + bigrams → `Logistic Regression` baseline.  
 **Why this matters:** Strong, interpretable baseline; great canvas to discuss trade‑offs (precision vs recall), thresholds, and deployment.
