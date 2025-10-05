@@ -9,7 +9,7 @@ A clean, reproducible **spam vs ham** SMS classifier that showcases end‑to‑e
 
 <p align="center">
 <img alt="ROC Curve" src="reports/figures/roc_test.png" width="55%">
-<img alt="Confusion Matrix" src="reports/figures/confusion_matrix_test.png" width="43%">
+<img alt="Confusion Matrix" src="reports/figures/confusion_matrix_test.png" width="55%">
 </p>
 
 ## Project Structure
