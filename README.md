@@ -86,3 +86,20 @@ python src/top_ngrams.py --model_dir models/latest --k 25
 # 4️⃣ Score new messages
 python src/infer.py --model_dir models/latest --text "Free entry to win £1000!"
 printf '%s\n%s\n' 'win cash now!!!' 'Hey, are we meeting at 5?' | python src/infer.py --model_dir models/latest
+```
+
+## 📘 Interactive Notebooks (HTML Exports)
+
+Explore the full workflow directly through rendered HTML notebooks (no setup required):
+
+- [**01_eda.html**](https://nbviewer.org/github/drnursultan/sms-spam-classifier/blob/main/notebooks/exports/01_eda.html) – Exploratory Data Analysis  
+- [**02_eval_plots.html**](https://nbviewer.org/github/drnursultan/sms-spam-classifier/blob/main/notebooks/exports/02_eval_plots.html) – Model Evaluation (ROC, Confusion Matrix)  
+- [**03_threshold_tuning.html**](https://nbviewer.org/github/drnursultan/sms-spam-classifier/blob/main/notebooks/exports/03_threshold_tuning.html) – Threshold Tuning & Precision-Recall Analysis
+
+---
+
+## 👤 Author
+
+**Nursultan Azhimuratov**  
+🎓 PhD Candidate in Statistics | 💻 Data Scientist  
+🔗 [GitHub: @drnursultan](https://github.com/drnursultan)
