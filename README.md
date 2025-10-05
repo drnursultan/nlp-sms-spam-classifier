@@ -31,8 +31,8 @@ The model achieves **very high precision** (few false positives) but **lower rec
 <th>Confusion Matrix</th>
 </tr>
 <tr>
-<td><img src="reports/figures/roc_test.png" width="40%"/></td>
-<td><img src="reports/figures/confusion_matrix_test.png" width="40%"/></td>
+<td><img src="reports/figures/roc_test.png" width="90%"/></td>
+<td><img src="reports/figures/confusion_matrix_test.png" width="90%"/></td>
 </tr>
 </table>
 
