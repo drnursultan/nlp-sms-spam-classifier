@@ -90,12 +90,12 @@ printf '%s\n%s\n' 'win cash now!!!' 'Hey, are we meeting at 5?' | python src/inf
 
 ## 📘 Interactive Notebooks (HTML Exports)
 
-Explore the full workflow directly through rendered HTML notebooks (no setup required):
+Explore the full workflow directly through rendered HTML notebooks (hosted in this repo):
 
-- [**01_eda.html**](https://nbviewer.org/github/drnursultan/sms-spam-classifier/blob/main/notebooks/exports/01_eda.html) – Exploratory Data Analysis  
-- [**02_eval_plots.html**](https://nbviewer.org/github/drnursultan/sms-spam-classifier/blob/main/notebooks/exports/02_eval_plots.html) – Model Evaluation (ROC, Confusion Matrix)  
-- [**03_threshold_tuning.html**](https://nbviewer.org/github/drnursultan/sms-spam-classifier/blob/main/notebooks/exports/03_threshold_tuning.html) – Threshold Tuning & Precision-Recall Analysis
-
+- [**01_eda.html**](notebooks/exports/01_eda.html) – Exploratory Data Analysis  
+- [**02_eval_plots.html**](notebooks/exports/02_eval_plots.html) – Model Evaluation (ROC, Confusion Matrix)  
+- [**03_threshold_tuning.html**](notebooks/exports/03_threshold_tuning.html) – Threshold Tuning & Precision-Recall Analysis
+ 
 ---
 
 ## 👤 Author
